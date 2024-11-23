@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Variables CSS */
+:root {
+    --header-height: 3.5rem;
+    /* Colors */
+    --first-color: hsl(18, 95%, 55%);
+    --second-color: hsl(42, 98%, 52);
+
+    --body-font: "Montserrat", serif;
+    --big-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+}
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+:focus * {
+    outline: 0;
+}
+  
+button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+  
+button:focus {
+    outline: 0;
+}
+  
+/* .btn.focus,
+.btn:focus {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
+} */
+  
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+  
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+.overflow {
+    overflow: hidden;
+}
+  
+li {
+    list-style-type: none;
+}
+  
+label {
+    display: block;
+}
+  
+input {
+    width: 100%;
+}
+  
+img,
+svg {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    vertical-align: middle;
+}
+  
+.object-contain {
+    object-fit: contain;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: black;
+}
+  
+.heading-1 {
+    font-size: 4.5rem;
+}
+  
+.heading-2 {
+    font-size: 4.5rem;
+}
+  
+.heading-3 {
+    font-size: 3.5rem;
+}
+  
+.heading-4 {
+    font-size: 2.5rem;
+}
+  
+.heading-5 {
+    font-size: 2.2rem;
+}
+  
+.heading-6 {
+    font-size: 2rem;
+}
+  
+.heading-7 {
+    font-size: 1.8rem;
+}
+  
+.heading-8 {
+    font-size: 1.6rem;
+}
+  
+.heading-30 {
+    font-size: 3rem;
+}
+  
+.desc-1 {
+    font-size: 2.2rem;
+}
+  
+.desc-2 {
+    font-size: 1.6rem;
+}
+  
+.desc-3 {
+    font-size: 1.3rem;
+}
+  
+.desc-4 {
+    font-size: 1.2rem;
+}
+  
+.btn {
+    display: inline-flex;
+    background: var(--first-color);
+    color: white;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+  
+.btn:hover {
+    color: white;
+    box-shadow: 0 8px 32px var(--first-color);
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+/* HEADER & NAV */
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 10;
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.nav-logo span {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-logo i {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+.nav_toggle,
+.nav_close {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: black;
+        width: 80%;
+        height: 100%;
+        padding: 7.5rem 3.5rem;
+        border-left: 2px solid rgba(80, 73, 73, 0.501);
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+}
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.nav_link {
+    color: lightblue;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.nav_link:hover {
+    color: white;
+}
+
+.nav_close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.show-menu {
+    right: 0;
+}
+
+
+
+
+
+
+
+

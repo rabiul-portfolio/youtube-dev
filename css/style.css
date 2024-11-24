@@ -289,6 +289,74 @@ h6 {
     right: 0;
 }
 
+/* HOME */
+.home {
+    position: relative;
+    background: black;
+}
+
+.home_container {
+    position: relative;
+    row-gap: 3rem;
+    padding: 2.5rem 6rem;
+}
+
+.home_content {
+    row-gap: 2.5rem;
+
+}
+
+.home_data {
+    text-align: center;
+}
+
+.home_title {
+    color: white;
+    font-size: var(--big-font-size);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.home_desc {
+    margin-bottom: 2.5rem;
+    color: lightblue;
+}
+
+.home_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  1rem;
+}
+
+.btn_link {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    color: var(--first-color);
+}
+
+.btn_link span {
+    font-weight: 500;
+}
+
+.btn_link i {
+    font-size: 1.5rem;
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+
+.btn_link:hover i {
+    transform: translateX(.25rem);
+    -webkit-transform: translateX(.25rem);
+    -moz-transform: translateX(.25rem);
+    -ms-transform: translateX(.25rem);
+    -o-transform: translateX(.25rem);
+}
+
 
 
 
